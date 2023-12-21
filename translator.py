@@ -28,10 +28,10 @@ opt=["Hindi","English","Spanish","German","French"]
 #for window
 window=Tk()
 window.geometry("600x300")#it's "x" not multiplication sign
-window.config(bg="brown")
+window.config(bg="light gray")
 
 #gui for input of first entry window
-entrywindow=Entry(window, bg="grey", fg="white",
+entrywindow=Entry(window, bg="white", fg="dark gray",
                   font=("arial",20,"bold"))#write text to convert
 entrywindow.place(x=20,y=60)
 
@@ -42,11 +42,11 @@ dropcontent=OptionMenu(window,dropdown,*opt)#list of language using this functio
 dropcontent.configure(bg="light blue", fg="black", font=("arial",12,"bold"))
 dropcontent.place(x=350,y=60)#helps in giving dimensions using coordinates
 
-label=Label(window,text="\t\t\t\t\t\t",bg="grey",fg="white",font=("arial",16,"bold"))#to write anything
-label.place(x=10,y=120)
-label=Label(window,text="Translated Language",bg="white",fg="brown",font=("arial",16,"bold"))
+label=Label(window,text="\t\t\t\t\t\t",bg="light blue",fg="white",font=("arial",16,"bold"))#to write anything
+label.place(x=20,y=120)
+label=Label(window,text="Translated Language",bg="light blue",fg="black",font=("arial",16,"bold"))
 label.place(x=180,y=120)
 
-translateb=Button(window,text="Translate !!", bg="white",fg="orange",font=("arial",16,"bold"),command=a)
+translateb=Button(window,text="Translate !!", bg="deep sky blue",fg="white",font=("arial",16,"bold"),command=a)
 translateb.place(x=220,y=220)
 window.mainloop()#indicates the program completion and if it is not used then o/p will not be shown whether it has error or not
